@@ -1,0 +1,158 @@
+:root {
+    --text-color: rgb(0, 128, 117);
+    --main-color: rgb(0, 183, 255);
+    --main-margin: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
+}
+
+.game-header {
+    color: white;
+    background-color: var(--main-color);
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: white;
+    margin-top: var(--main-margin);
+    margin-bottom: var(--main-margin);
+    border-radius: 6px;
+    text-align: center;
+    padding: 15px;
+}
+
+.header span {
+    color: var(--text-color);
+}
+
+.header span::after {
+    content: " ]";
+}
+
+.header span::before {
+    content: "[ ";
+}
+
+.play-btn {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-top: var(--main-margin);
+    margin-bottom: var(--main-margin);
+    gap: 20px;
+}
+
+.play-btn button {
+    color: white;
+    flex: 1;
+    height: 50px;
+    font-size: 20px;
+    border: 3px solid white;
+    cursor: pointer;
+}
+
+.play-btn button:focus {
+    outline: none;
+}
+
+.play-btn .easy {
+    background-color: rgb(49, 176, 49);
+}
+
+.play-btn .normal {
+    background-color: #ffc400;
+}
+
+.play-btn .hard {
+    background-color: rgb(189, 50, 50);
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: var(--main-margin);
+    display: none;
+    user-select: none;
+}
+
+input {
+    font-size: 20px;
+    padding: 10px;
+    background-color: white;
+    border: 3px solid var(--main-color);
+    border-radius: 6px;
+    text-align: center;
+    width: 100%;
+    caret-color: var(--main-color);
+    margin-bottom: var(--main-margin);
+}
+
+input:focus {
+    outline: none;
+}
+
+.coming-words {
+    background-color: #efefef;
+    text-align: center;
+    margin-bottom: var(--main-margin);
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.coming-words span {
+    background-color: rgb(0, 128, 90);
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.controls {
+    background-color: #efefef;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.controls span {
+    color: var(--text-color);
+}
+
+.result {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.result span {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.result span.win {
+    color: green;
+}
+
+.result span.lose {
+    color: red;
+}

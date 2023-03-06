@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Page Scroll Progress</title>
+</head>
+<body>
+    <div class="game-header">Typing Speed Test Game</div>
+    <div class="container">
+        <div class="header">You Are Playing <span class="difficulty"></span> Level & You Have <span class="time-remaining"></span> Seconds To Type The Word</div>
+        <div class="play-btn">
+            <button class="easy">Easy</button>
+            <button class="normal">Normal</button>
+            <button class="hard">Hard</button>
+        </div>
+        <h1>Word</h1>
+        <input type="text">
+        <div class="coming-words">
+        </div>
+        <div class="controls">
+            <p>Time Left: <span class="time-remaining time-counter"></span> Seconds</p>
+            <p>Score: <span class="score"></span> From <span class="total-score"></span></p>
+        </div>
+
+        <div class="result"></div>
+
+        <audio class="win-sound" src="right.mp3"></audio>
+        <audio class="lose-sound" src="wrong.mp3"></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
